@@ -1,17 +1,18 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//Criando a Classe sistemas despesas que sera usada seus prametros posterioe=rmente no proprio metodo main.
+//Criando as listas necessarias.
 public class SistemaDespesa {
     private ArrayList<Despesa> despesas;
     private TipoDespesa tipoDespesa;
     private ArrayList<Usuario> usuarios;
-
+    //Declarando variaveis.
     public SistemaDespesa() {
         despesas = new ArrayList<>();
         tipoDespesa = new TipoDespesa();
         usuarios = new ArrayList<>();
     }
-
+    //Criando o menu de inserção de despesas.
     public void entrarDespesa(Scanner scanner) {
         System.out.println("Digite a descrição da despesa:");
         String descricao = scanner.nextLine();
@@ -22,12 +23,12 @@ public class SistemaDespesa {
         String dataVencimento = scanner.nextLine();
         System.out.println("Digite a categoria da despesa:");
         String categoria = scanner.nextLine();
-
+        //Salvando desepesa Inserida pelo o usuario atraves do menu.
         Despesa despesa = new Despesa(descricao, valor, dataVencimento, categoria);
         despesas.add(despesa);
         System.out.println("Despesa adicionada com sucesso!");
     }
-
+    //Criando menu para receber o nome da depsesa que dejesa ser paga e anotando o pagamento da mesma. 
     public void anotarPagamento(Scanner scanner) {
         System.out.println("Digite a descrição da despesa a ser paga:");
         String descricao = scanner.nextLine();
@@ -38,9 +39,10 @@ public class SistemaDespesa {
                 return;
             }
         }
+        //Caso a despesa não seja encontada.
         System.out.println("Despesa não encontrada ou já paga.");
     }
-
+    //Listando despesas ja pagas.
     public void listarDespesas(boolean pagas) {
         for (Despesa despesa : despesas) {
             if (despesa.isPaga() == pagas) {
@@ -48,7 +50,7 @@ public class SistemaDespesa {
             }
         }
     }
-
+    //Gerenciando os tipos de despesas disponiveis.
     public void gerenciarTiposDespesa(Scanner scanner) {
         System.out.println("Gerenciar Tipos de Despesa:");
         System.out.println("1. Adicionar Tipo");
@@ -56,8 +58,8 @@ public class SistemaDespesa {
         System.out.println("3. Remover Tipo");
 
         int opcao = scanner.nextInt();
-        scanner.nextLine();  // Consumir nova linha
-
+        scanner.nextLine();  
+        //Inserção da ordem em que são exigidas e guardadas as informações de novas despesas.
         switch (opcao) {
             case 1:
                 System.out.println("Digite o nome do novo tipo de despesa:");
@@ -78,7 +80,7 @@ public class SistemaDespesa {
                 System.out.println("Opção inválida.");
         }
     }
-
+    //Gerenciando usuarios.
     public void gerenciarUsuarios(Scanner scanner) {
         System.out.println("Gerenciar Usuários:");
         System.out.println("1. Adicionar Usuário");
@@ -86,7 +88,7 @@ public class SistemaDespesa {
 
         int opcao = scanner.nextInt();
         scanner.nextLine();  // Consumir nova linha
-
+        //Inserção da ordem em que são exigidas e guardadas as informações de novos usuarios.
         switch (opcao) {
             case 1:
                 System.out.println("Digite o login do novo usuário:");
@@ -96,12 +98,14 @@ public class SistemaDespesa {
                 usuarios.add(new Usuario(login, senha));
                 System.out.println("Usuário adicionado com sucesso!");
                 break;
+            //Login de usuario cadastrado.
             case 2:
                 for (Usuario usuario : usuarios) {
                     System.out.println("Login: " + usuario.getLogin());
                 }
                 break;
             default:
+            //Caso apaertado opção inexistente.
                 System.out.println("Opção inválida.");
         }
     }
