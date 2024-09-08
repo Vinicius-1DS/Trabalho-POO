@@ -66,20 +66,20 @@ gerenciarTiposDespesa(Scanner scanner) - Exibe um submenu que permite adicionar,
 gerenciarUsuarios(Scanner scanner) - Exibe um submenu que permite adicionar e listar usuários cadastrados.
 
 Com isso em mente podemos citar algumas coisas importantes:
-Fluxo Geral do Sistema
+# Fluxo Geral do Sistema
 Menu Principal - Inicia no menu principal, onde pode escolher entre inserir despesas, registrar pagamentos, listar despesas, gerenciar tipos de despesas e gerenciar usuários.
 Entrar Despesa - Insere uma despesa com uma descrição, valor, data de vencimento e categoria.
 Anotar Pagamento - Registra o pagamento de uma despesa específica.
 Despesas - Lista as despesas filtrando por pagas ou pendentes, e o usuário pode editar ou excluir despesas (não implementado nesta versão).
 Gerenciar Tipos de Despesa - Cria, lista e remove tipos de despesas.
 Gerenciar Usuários - Cadastra novos usuários e lista os existentes. As senhas são criptografadas antes de serem armazenadas.
-Criptografia de Senhas
+# Criptografia de Senhas
 A classe Usuario usa o algoritmo SHA-256 (algoritmo de hash seguro de 256 bits usado para proteção criptográfica). para criptografar senhas antes de armazená-las. Isso é feito através do método criptografarSenha(), que converte a senha em um hash irreversível. Quando o usuário tenta fazer login, a senha fornecida é comparada com o hash armazenado assim fazendo sua validação.
-Possíveis Melhorias
+# Possíveis Melhorias
 Dentre as possiveis melhorias que podemos apontar no programa a=em si pode-se desacaer allgumas delas como:
 Persistência de Dados - Atualmente, o sistema fo construido usando apenas variáveis em memória. Para que as informações sejam persistidas entre execuções do programa, seria necessário implementar leitura e gravação em arquivos de texto ouo um banco de dados, criando assim um sistema que pode ser usado e  escalonado para aglo ainda maior no futuro.
 Tratamento de Exceções - Para melhorar a robustez do sistema, implementado um tratamento de exceções e uma forma mais eficaz e util para lidar com erros comuns, como entrada de dados inválidos.
 Interface Gráfica - Embora a aplicação atual seja baseada apenas em linhas de comando, uma interface gráfica pode ser desenvolvida futuramente a fim de melhorar a experiência do usuário e tornar o sistema mais visual e intuitivo.
-Resumo:
+# Resumo:
 A documentação tem o objetivo de cobrir os principais aspectos do código, explicando as funcionalidades de cada classe e seus métodos para futuras manutencoes e entendimento de terceiros. podendo usar este documento como base para enetender e expandir o sistema.
 
