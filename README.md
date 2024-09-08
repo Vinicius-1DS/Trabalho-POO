@@ -5,7 +5,7 @@ Criado com o objetivo de permitir que o usuário gerencie despesas e pagamentos,
 Essa é a classe principal do programa. Ela exibe  a interface do menu principal para o usuário e serve como o ponto de entrada do sistema.
 Funções
 * main(): Método principal que inicializa o sistema e fornece um loop para o menu de interação com o usuário. Baseado na escolha do usuário, ele delega as funções para o sistema de controle de despesas.
-#Opções contidas no Menu Principal
+# Opções contidas no Menu Principal
 * Entrar Despesa – Da entrada de uma nova despesa.
 * Anotar Pagamento - Registra o pagamento de uma despesa já existente.
 * Listar Despesas em Aberto - Mostra despesas que ainda não foram pagas.
