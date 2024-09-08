@@ -17,18 +17,18 @@ Método principal que inicializa o sistema e fornece um loop para o menu de inte
 
 # Despesa.java
 A classe representa uma despesa que pode ser inserida pelo usuário. conténdo detalhes sobre a descrição, valor, data de vencimento, categoria, e o status de pagamento da mesma.
-- Atributos Contidos 
-Descricao - string que descreve a despesa.
-Valor - valor da despesa.
-dataVencimento - Data de vencimento da despesa ("dd/mm/aaaa").
-Categoria - Categoria à qual a despesa pertence.
-Paga - booleano que indica se a despesa já foi paga ou não.
-- Métodos
-Despesa(String descricao, double valor, String dataVencimento, String categoria) - Metodo Construtor que inicializa os atributos de uma despesa.
-anotarPagamento() - Marca a despesa como paga.
-getDescricao(), getValor(), getDataVencimento(), getCategoria(): Métodos "getter" para acessar os atributos da despesa inseridos posteriormente.
-isPaga() - Verifica se a despesa foi paga.
-toString() - Retorna uma representação em string da despesa.
+# Atributos Contidos 
+* Descricao - string que descreve a despesa.
+* Valor - valor da despesa.
+* dataVencimento - Data de vencimento da despesa ("dd/mm/aaaa").
+* Categoria - Categoria à qual a despesa pertence.
+* Paga - booleano que indica se a despesa já foi paga ou não.
+# Métodos
+* Despesa(String descricao, double valor, String dataVencimento, String categoria) - Metodo Construtor que inicializa os atributos de uma despesa.
+* anotarPagamento() - Marca a despesa como paga.
+* getDescricao(), getValor(), getDataVencimento(), getCategoria(): Métodos "getter" para acessar os atributos da despesa inseridos posteriormente.
+* isPaga() - Verifica se a despesa foi paga.
+* toString() - Retorna uma representação em string da despesa.
 
 # TipoDespesa.java
 Essa classe gerencia uma lista de tipos de despesas. Ela armazena e manipula as categorias que uma despesa pode ter.
