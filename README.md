@@ -1,5 +1,5 @@
 # Trabalho-POO
-Documentação - Sistema de Controle de Despesas (SCD).
+# Documentação - Sistema de Controle de Despesas (SCD).
 Visão Geral
 Criado com o objetivo de permitir que o usuário gerencie despesas e pagamentos, com funcionalidades que facilitam esse processo como a inserção de despesas, registro de pagamentos, listagem de despesas por seus status “pagas ou pendentes”, gerenciamento de tipos de despesas e gerenciamento de usuários. Essas informações são armazenadas localmente, o sistema foi implementado com o uso do Java e seus princípios de Orientação a Objetos, herança, interfaces, polimorfismo, e sobrecarga de métodos.
 Main.java
