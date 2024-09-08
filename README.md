@@ -3,7 +3,7 @@
 Criado com o objetivo de permitir que o usuário gerencie despesas e pagamentos, com funcionalidades que facilitam esse processo como a inserção de despesas, registro de pagamentos, listagem de despesas por seus status “pagas ou pendentes”, gerenciamento de tipos de despesas e gerenciamento de usuários. Essas informações são armazenadas localmente, o sistema foi implementado com o uso do Java e seus princípios de Orientação a Objetos, herança, interfaces, polimorfismo, e sobrecarga de métodos.
 # Main.java
 Essa é a classe principal do programa. Ela exibe  a interface do menu principal para o usuário e serve como o ponto de entrada do sistema.
-- Funções
+//- Funções
 main(): Método principal que inicializa o sistema e fornece um loop para o menu de interação com o usuário. Baseado na escolha do usuário, ele delega as funções para o sistema de controle de despesas.
 - Opções contidas no Menu Principal
 Entrar Despesa – Da entrada de uma nova despesa.
