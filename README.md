@@ -1,7 +1,7 @@
 # Trabalho-POO
 # Documentação - Sistema de Controle de Despesas (SCD).
 Criado com o objetivo de permitir que o usuário gerencie despesas e pagamentos, com funcionalidades que facilitam esse processo como a inserção de despesas, registro de pagamentos, listagem de despesas por seus status “pagas ou pendentes”, gerenciamento de tipos de despesas e gerenciamento de usuários. Essas informações são armazenadas localmente, o sistema foi implementado com o uso do Java e seus princípios de Orientação a Objetos, herança, interfaces, polimorfismo, e sobrecarga de métodos.
-Main.java
+# Main.java
 Essa é a classe principal do programa. Ela exibe  a interface do menu principal para o usuário e serve como o ponto de entrada do sistema.
 - Funções
 main(): Método principal que inicializa o sistema e fornece um loop para o menu de interação com o usuário. Baseado na escolha do usuário, ele delega as funções para o sistema de controle de despesas.
@@ -14,7 +14,7 @@ Gerenciar Tipos de Despesa -  Cria, edita e lista os tipos das despesas.
 Gerenciar Usuários - Permite cadastrar e listar usuários.
 Sair - Encerra o sistema como um todo.
 
-Despesa.java
+# Despesa.java
 A classe representa uma despesa que pode ser inserida pelo usuário. conténdo detalhes sobre a descrição, valor, data de vencimento, categoria, e o status de pagamento da mesma.
 - Atributos Contidos 
 Descricao - string que descreve a despesa.
@@ -29,7 +29,7 @@ getDescricao(), getValor(), getDataVencimento(), getCategoria(): Métodos "gette
 isPaga() - Verifica se a despesa foi paga.
 toString() - Retorna uma representação em string da despesa.
 
-TipoDespesa.java
+# TipoDespesa.java
 Essa classe gerencia uma lista de tipos de despesas. Ela armazena e manipula as categorias que uma despesa pode ter.
 - Atributos
 tiposDespesa - array de strings que contém diferentes tipos de despesas.
@@ -39,7 +39,7 @@ adicionarTipo(String tipo) - Adiciona um novo tipo de despesa à lista.
 listarTipos() - Lista todos os tipos de despesas armazenados.
 removerTipo(String tipo) - Remove um tipo de despesa da lista.
 
-Usuario.java
+# Usuario.java
 A classe Usuario é responsável por gerenciar informações de usuários, incluindo criptografia de senhas.
 - Atributos
 Login - O nome de login do usuário.
@@ -50,7 +50,7 @@ criptografarSenha(String senha) - Método privado que criptografa uma senha usan
 getLogin() - Retorna o nome de login do usuário.
 validarSenha(String senha) - Verifica se a senha fornecida corresponde à senha criptografada armazenada.
 
-SistemaDespesa.java
+# SistemaDespesa.java
 A classe SistemaDespesa é o "controlador" que gerencia todas as funcionalidades principais do sistema, como entrada de despesas, registro de pagamentos, gerenciamento de tipos de despesas e usuários.
 - Atributos
 Despesas - Um array que armazena todas as despesas inseridas.
