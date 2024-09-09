@@ -74,7 +74,7 @@ Com isso em mente podemos citar algumas coisas importantes:
 * Gerenciar Tipos de Despesa - Cria, lista e remove tipos de despesas.
 * Gerenciar Usuários - Cadastra novos usuários e lista os existentes. As senhas são criptografadas antes de serem armazenadas.
 # Criptografia de Senhas
-*A classe Usuario usa o algoritmo SHA-256 (algoritmo de hash seguro de 256 bits usado para proteção criptográfica). para criptografar senhas antes de armazená-las. Isso é feito através do método criptografarSenha(), que converte a senha em um hash irreversível. Quando o usuário tenta fazer login, a senha fornecida é comparada com o hash armazenado assim fazendo sua validação.
+* A classe Usuario usa o algoritmo SHA-256 (algoritmo de hash seguro de 256 bits usado para proteção criptográfica). para criptografar senhas antes de armazená-las. Isso é feito através do método criptografarSenha(), que converte a senha em um hash irreversível. Quando o usuário tenta fazer login, a senha fornecida é comparada com o hash armazenado assim fazendo sua validação.
 # Possíveis Melhorias
 Dentre as possiveis melhorias que podemos apontar no programa a=em si pode-se desacaer allgumas delas como:
 * Persistência de Dados - Atualmente, o sistema fo construido usando apenas variáveis em memória. Para que as informações sejam persistidas entre execuções do programa, seria necessário implementar leitura e gravação em arquivos de texto ouo um banco de dados, criando assim um sistema que pode ser usado e  escalonado para aglo ainda maior no futuro.
