@@ -81,5 +81,5 @@ Dentre as possiveis melhorias que podemos apontar no programa a=em si pode-se de
 * Tratamento de Exceções - Para melhorar a robustez do sistema, implementado um tratamento de exceções e uma forma mais eficaz e util para lidar com erros comuns, como entrada de dados inválidos.
 * Interface Gráfica - Embora a aplicação atual seja baseada apenas em linhas de comando, uma interface gráfica pode ser desenvolvida futuramente a fim de melhorar a experiência do usuário e tornar o sistema mais visual e intuitivo.
 # Resumo:
-* A documentação tem o objetivo de cobrir os principais aspectos do código, explicando as funcionalidades de cada classe e seus métodos para futuras manutencoes e entendimento de terceiros. podendo usar este documento como base para enetender e expandir o sistema.
+A documentação tem o objetivo de cobrir os principais aspectos do código, explicando as funcionalidades de cada classe e seus métodos para futuras manutencoes e entendimento de terceiros. podendo usar este documento como base para enetender e expandir o sistema.
 
