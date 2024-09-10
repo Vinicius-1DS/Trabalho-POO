@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-//Criação da Nova classe Herdada De Sistemadespesa: "sistema" 
+//Criação da Nova classe de Sistemadespesa: "sistema" 
         SistemaDespesa sistema = new SistemaDespesa();
 //Componentes do Menu Principal
         while (true) {
